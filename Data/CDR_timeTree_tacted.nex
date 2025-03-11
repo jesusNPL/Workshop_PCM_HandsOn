@@ -1,0 +1,1209 @@
+#NEXUS
+[R-package APE, Tue Mar 11 13:46:17 2025]
+
+BEGIN TAXA;
+	DIMENSIONS NTAX = 598;
+	TAXLABELS
+		Juniperus_communis
+		Juniperus_sp.
+		Juniperus_virginiana
+		Picea_sp.
+		Larix_laricina
+		Pinus_strobus
+		Pinus_resinosa
+		Pinus_sp.
+		Pinus_banksiana
+		Lemna_sp.
+		Sagittaria_latifolia
+		Uvularia_sessilifolia
+		Streptopus_lanceolatus
+		Smilax_herbacea
+		Hypoxis_hirsuta
+		Platanthera_lacera
+		Iris_versicolor
+		Elymus_trachycaulus
+		Allium_stellatum
+		Allium_sp.
+		Allium_cernuum
+		Sisyrinchium_campestre
+		Asparagus_officinalis
+		Maianthemum_stellatum
+		Maianthemum_canadense
+		Polygonatum_sp.
+		Polygonatum_biflorum
+		Tradescantia_sp.
+		Tradescantia_bracteata
+		Tradescantia_occidentalis
+		Typha_sp.
+		Typha_latifolia
+		Typha_angustifolia
+		Juncus_sp.
+		Juncus_tenuis
+		Hierochloe_odorata
+		Anthoxanthum_nitens
+		Scleria_triglomerata
+		Eleocharis_sp.
+		Eleocharis_geniculata
+		Cyperus_filiculmis
+		Cyperus_schweinitzii
+		Cyperus_sp.
+		Cyperus_strigosus
+		Dulichium_arundinaceum
+		Scirpus_cyperinus
+		Carex_disperma
+		Carex_echinata
+		Carex_interior
+		Carex_canescens
+		Carex_vulpinoidea
+		Carex_foenea
+		Carex_diandra
+		Carex_bicknellii
+		Carex_lativena
+		Carex_bebbii
+		Carex_scoparia
+		Carex_sp.
+		Carex_chordorrhiza
+		Carex_haydenii
+		Carex_stricta
+		Carex_pensylvanica
+		Carex_gracillima
+		Carex_oligosperma
+		Carex_lasiocarpa
+		Carex_rostrata
+		Carex_comosa
+		Carex_lacustris
+		Chamaenerion_angustifolium
+		Cenchrus_americanus
+		Pilosella_aurantiaca
+		Koeleria_micrathera
+		Frangula_alnus
+		Demia_testudo
+		Bouteloua_dactyloides
+		Leersia_oryzoides
+		Glyceria_sp.
+		Glyceria_grandis
+		Miscanthus_giganteus
+		Schizachne_purpurascens
+		Bromus_tectorum
+		Bromus_ciliatus
+		Bromus_kalmii
+		Bromus_sp.
+		Bromus_inermis
+		Lysimachia_borealis
+		Secale_cereale
+		Secale_vavilovii
+		Elymus_repens
+		Elymus_canadensis
+		Andropogon_gerardii
+		Andropogon_gerardi
+		Phalaris_arundinacea
+		Calamagrostis_canadensis
+		Agrostis_sp.
+		Agrostis_scabra
+		Phleum_pratense
+		Festuca_rubra
+		Festuca_guestphalica
+		Festuca_ovina
+		Festuca_sp.
+		Festuca_guestfalica
+		Lolium_multiflorum
+		Poa_sp.
+		Poa_pratensis
+		Poa_compressa
+		Poa_nemoralis
+		Poa_palustris
+		Hesperostipa_spartea
+		Hesperostipa_comata
+		Calamagrostis_stricta
+		Calamagrostis_inexpansa
+		Koeleria_pyramidata
+		Bouteloua_gracilis
+		Danthonia_spicata
+		Aristida_sp.
+		Aristida_tuberculosa
+		Aristida_basiramea
+		Eragrostis_trichodes
+		Eragrostis_spectabilis
+		Cycloloma_atriplicifolium
+		Dysphania_atriplicifolia
+		Muhlenbergia_racemosa
+		Bouteloua_aristidoides
+		Bouteloua_curtipendula
+		Bouteloua_hirsuta
+		Sporobolus_rigidus
+		Sporobolus_heterolepis
+		Aster_sp.
+		Sporobolus_cryptandrus
+		Paspalum_setaceum
+		Setaria_sp.
+		Setaria_viridis
+		Setaria_italica
+		Digitaria_sp.
+		Digitaria_sanguinalis
+		Digitaria_cognata
+		Cenchrus_longispinus
+		Roosia_sp.
+		Digitaria_ischaemum
+		Chondrosum_hirsutum
+		Trachypogon_spicatus
+		Ageratina_liebmannii
+		Sorghastrum_nutans
+		Schizachyrium_scoparium
+		Calamagrostis_sp.
+		Bouteloua_sp.
+		Panicum_miliaceum
+		Panicum_capillare
+		Panicum_virgatum
+		Panicum_sp.
+		Panicum_acuminatum
+		Dichanthelium_praecocius
+		Panicum_oligosanthes
+		Panicum_perlongum
+		Dichanthelium_oligosanthes
+		Dichanthelium_acuminatum
+		Panicum_leibergii
+		Dichanthelium_linearifolium
+		Caltha_palustris
+		Anemone_patens
+		Pulsatilla_patens
+		Anemone_quinquefolia
+		Anemone_virginiana
+		Anemone_cylindrica
+		Delphinium_carolinianum
+		Thalictrum_dioicum
+		Thalictrum_dasycarpum
+		Ranunculus_rhomboideus
+		Aquilegia_canadensis
+		Parthenocissus_quinquefolia
+		Vitis_vulpina
+		Vitis_riparia
+		Parthenocissus_inserta
+		Parthenocissus_vitacea
+		Parthenocissus_sp.
+		Ribes_hirtellum
+		Heuchera_richardsonii
+		Saxifraga_pensylvanica
+		Micranthes_pensylvanica
+		Penthorum_sedoides
+		Geranium_maculatum
+		Ludwigia_polycarpa
+		Circaea_lutetiana
+		Epilobium_sp.
+		Epilobium_leptophyllum
+		Epilobium_ciliatum
+		Oenothera_parviflora
+		Oenothera_biennis
+		Oenothera_sp.
+		Oenothera_rhombipetala
+		Zanthoxylum_americanum
+		Acer_negundo
+		Acer_sp.
+		Acer_rubrum
+		Toxicodendron_radicans
+		Rhus_sp.
+		Rhus_glabra
+		Rhus_typhina
+		Lechea_stricta
+		Helianthemum_bicknellii
+		Crocanthemum_bicknellii
+		Berteroa_incana
+		Leavenworthia_sp.
+		Sisymbrium_altissimum
+		Barbarea_vulgaris
+		Arabis_divaricarpa
+		Boechera_divaricarpa
+		Turritis_glabra
+		Lepidium_densiflorum
+		Lepidium_sp.
+		Lepidium_virginicum
+		'Capsellabursa-pastoris'
+		Arabis_sp.
+		Arabis_hirsuta
+		Celastrus_scandens
+		Petalostemon_candidus
+		Oxalis_sp.
+		Oxalis_stricta
+		Euphorbia_sp.
+		Euphorbia_corollata
+		Euphorbia_geyeri
+		Euphorbia_glyptosperma
+		Euphorbia_maculata
+		Viola_selkirkii
+		Viola_pedatifida
+		Viola_macloskeyi
+		Viola_palustris
+		Viola_pedata
+		Viola_sp.
+		Viola_sagittata
+		Populus_grandidentata
+		Populus_tremuloides
+		Populus_deltoides
+		Populus_balsamifera
+		Salix_pyrifolia
+		Salix_bebbiana
+		Salix_sp.
+		Salix_pedicellaris
+		Salix_discolor
+		Salix_interior
+		Salix_petiolaris
+		Salix_humilis
+		Salix_serissima
+		Elymus_smithii
+		Parogonum_ciliinode
+		Ceanothus_americanus
+		Parietaria_pensylvanica
+		Pilea_pumila
+		Urtica_dioica
+		Ulmus_sp.
+		Ulmus_pumila
+		Ulmus_americana
+		Spiraea_tomentosa
+		Spiraea_alba
+		Prunus_virginiana
+		Prunus_serotina
+		Prunus_americana
+		Prunus_sp.
+		Prunus_pensylvanica
+		Prunus_pumila
+		Malus_domestica
+		Amelanchier_arborea
+		Aronia_melanocarpa
+		Agrimonia_sp.
+		Amelanchier_laevis
+		Amelanchier_interior
+		Amelanchier_alnifolia
+		Amelanchier_sanguinea
+		Rubus_idaeus
+		Rubus_pubescens
+		Rubus_occidentalis
+		Rubus_flagellaris
+		Rubus_sp.
+		Rubus_canadensis
+		Rubus_allegheniensis
+		Rosa_carolina
+		Rosa_arkansana
+		Rosa_blanda
+		Potentilla_sp.
+		Potentilla_simplex
+		Potentilla_norvegica
+		Potentilla_recta
+		Potentilla_argentea
+		Amelanchier_spicata
+		Comarum_palustre
+		Amelanchier_sp.
+		Potentilla_arguta
+		Drymocallis_arguta
+		Fragaria_virginiana
+		Fragaria_sp.
+		Fragaria_vesca
+		Alnus_incana
+		Corylus_americana
+		Betula_papyrifera
+		Betula_pumila
+		Betula_alleghaniensis
+		Quercus_petraea
+		Quercus_ellipsoidalis
+		Quercus_sp.
+		Quercus_alba
+		Quercus_macrocarpa
+		Polygala_sp.
+		Polygala_polygama
+		Polygala_sanguinea
+		Chamaecrista_fasciculata
+		Strophostyles_leiosperma
+		Amphicarpa_bracteata
+		Amphicarpaea_bracteata
+		Desmodium_glutinosum
+		Hylodesmum_glutinosum
+		Lespedeza_capitata
+		Calamovilfa_longifolia
+		Desmodium_canadense
+		Dalea_candida
+		Spartina_pectinata
+		Amorpha_canescens
+		Dalea_purpurea
+		Dalea_villosa
+		Lupinus_sp.
+		Lupinus_perennis
+		Baptisia_alba
+		Senecio_sp.
+		Senecio_aureus
+		Robinia_pseudoacacia
+		Trientalis_borealis
+		Astragalus_canadensis
+		Buchloe_dactyloides
+		Medicago_lupulina
+		Medicago_sp.
+		Medicago_sativa
+		Melilotus_sp.
+		Melilotus_officinalis
+		Melilotus_albus
+		Lathyrus_venosus
+		Lathyrus_ochroleucus
+		Vicia_sativa
+		Vicia_setifolia
+		Vicia_villosa
+		Trifolium_hybridum
+		Trifolium_repens
+		Trifolium_pratense
+		Trifolium_sp.
+		Trifolium_arvense
+		Comandra_umbellata
+		Pennisetum_glaucum
+		Maianthemum_racemosum
+		Hypericum_majus
+		Triadenum_fraseri
+		Salsola_kali
+		Amaranthus_retroflexus
+		Sporobolus_michauxianus
+		Chenopodium_sp.
+		Chenopodium_leptophyllum
+		Chenopodium_album
+		Chenopodium_hybridum
+		Chenopodiastrum_hybridum
+		Campanula_aparinoides
+		Campanula_sp.
+		Palustricodon_aparinoides
+		Silene_latifolia
+		Moehringia_lateriflora
+		Stellaria_media
+		Silene_sp.
+		Silene_antirrhina
+		Stellaria_longifolia
+		Portulaca_oleracea
+		Petalostemon_purpureus
+		Mollugo_verticillata
+		Mirabilis_hirsuta
+		Mirabilis_albida
+		Mirabilis_nyctaginea
+		Cornus_alternifolia
+		Cornus_sericea
+		Cornus_sp.
+		Cornus_racemosa
+		Elymus_violaceus
+		Lysimachia_ciliata
+		Lysimachia_thyrsiflora
+		Phlox_sp.
+		Phlox_pilosa
+		Phlox_paniculata
+		Impatiens_capensis
+		Pyrola_sp.
+		Pyrola_rotundifolia
+		Chamaedaphne_calyculata
+		Vaccinium_sp.
+		Vaccinium_angustifolium
+		Vaccinium_myrtilloides
+		Ilex_sp.
+		Ilex_verticillata
+		Sporobolus_sp.
+		Rhamnus_sp.
+		Rhamnus_cathartica
+		Polygonum_sp.
+		Polygonum_tenue
+		Polygonella_articulata
+		Fallopia_cilinodis
+		Fallopia_convolvulus
+		Fallopia_scandens
+		Rumex_sp.
+		Rumex_britannica
+		Rumex_mexicanus
+		Rumex_acetosella
+		Persicaria_thunbergii
+		Persicaria_sagittata
+		Persicaria_amphibia
+		Persicaria_lapathifolia
+		Persicaria_pensylvanica
+		Persicaria_maculosa
+		Persicaria_hydropiper
+		Convolvulus_arvensis
+		Solanum_carolinense
+		Solanum_dulcamara
+		Solanum_americanum
+		Solanum_nigrum
+		Physalis_virginiana
+		Physalis_sp.
+		Physalis_heterophylla
+		Physalis_pubescens
+		Gentiana_andrewsii
+		Houstonia_longifolia
+		Galium_boreale
+		Galium_asperellum
+		Galium_obtusum
+		Galium_triflorum
+		Galium_trifidum
+		Galium_trifolium
+		Galium_concinnum
+		Galium_sp.
+		Galium_aparine
+		Apocynum_androsaemifolium
+		Apocynum_cannabinum
+		Gymnema_sp.
+		Asclepias_sp.
+		Asclepias_verticillata
+		Asclepias_incarnata
+		Asclepias_viridiflora
+		Asclepias_ovalifolia
+		Asclepias_syriaca
+		Asclepias_tuberosa
+		Asclepias_exaltata
+		Hackelia_virginiana
+		Hackelia_deflexa
+		Lithospermum_carolinense
+		Lithospermum_sp.
+		Lithospermum_canescens
+		Lithospermum_caroliniense
+		Fraxinus_nigra
+		Fraxinus_americana
+		Fraxinus_pennsylvanica
+		Penstemon_digitalis
+		Penstemon_gracilis
+		Penstemon_sp.
+		Penstemon_cobaea
+		Penstemon_grandiflorus
+		Linaria_vulgaris
+		Veronicastrum_virginicum
+		Plantago_major
+		Plantago_lanceolata
+		Plantago_sp.
+		Plantago_patagonica
+		Verbascum_thapsus
+		Verbena_hastata
+		Verbena_stricta
+		Verbena_bracteata
+		Seemannia_sylvatica
+		Mimulus_ringens
+		Phryma_leptostachya
+		Utricularia_sp.
+		Pedicularis_sp.
+		Pedicularis_canadensis
+		Scutellaria_lateriflora
+		Scutellaria_parvula
+		Scutellaria_galericulata
+		Stachys_sp.
+		Stachys_palustris
+		Stachys_tenuifolia
+		Mosla_dianthera
+		Lycopus_americanus
+		Lycopus_sp.
+		Lycopus_uniflorus
+		Prunella_vulgaris
+		Agastache_foeniculum
+		Nepeta_cataria
+		Glechoma_hederacea
+		Monarda_fistulosa
+		Pycnanthemum_virginianum
+		Hedeoma_hispida
+		Monarda_punctata
+		Aralia_nudicaulis
+		Colladonia_sp.
+		Cicuta_bulbifera
+		Lichtensteinia_sp.
+		Zizia_aptera
+		Zizia_aurea
+		Viburnum_lentago
+		Symphoricarpos_occidentalis
+		Lonicera_dioica
+		Lonicera_morrowii
+		Lonicera_tatarica
+		Campanula_rotundifolia
+		Lobelia_spicata
+		Lobelia_siphilitica
+		Tragopogon_duarius
+		Tragopogon_dubius
+		Cirsium_discolor
+		Cirsium_sp.
+		Cirsium_altissimum
+		Cirsium_arvense
+		Vernonia_fasciculata
+		Hieracium_crassescens
+		Hieracium_sp.
+		Pilosella_longipila
+		Hieracium_longipilum
+		Hieracium_umbellatum
+		Lactuca_canadensis
+		Lactuca_biennis
+		Lactuca_sp.
+		Lactuca_serriola
+		Krigia_biflora
+		Sonchus_arvensis
+		Crepis_tectorum
+		Xyris_torta
+		Combretum_sp.
+		Nabalus_racemosus
+		Nabalus_albus
+		Taraxacum_officinale
+		Taraxacum_campylodes
+		Taraxacum_sp.
+		Petalostemum_sp.
+		Coreopsis_palmata
+		Bidens_tripartita
+		Bidens_cernua
+		Bidens_coronata
+		Bidens_sp.
+		Bidens_trichosperma
+		Helenium_autumnale
+		Eupatorium_maculatum
+		Eutrochium_maculatum
+		Eupatorium_perfoliatum
+		Liatris_aspera
+		Liatris_ligulistylis
+		Liatris_pycnostachya
+		Ratibida_pinnata
+		Rudbeckia_hirta
+		Echinacea_serotina
+		Echinacea_purpurea
+		Heliopsis_helianthoides
+		Ambrosia_artemisiifolia
+		Ambrosia_psilostachya
+		Helianthus_sp.
+		Helianthus_hirsutus
+		Helianthus_petiolaris
+		Helianthus_laetiflorus
+		Helianthus_giganteus
+		Packera_aurea
+		Packera_paupercula
+		Erechtites_hieracifolia
+		Erechtites_hieraciifolius
+		Achillea_sp.
+		Achillea_millefolium
+		Artemisia_campestris
+		Artemisia_sp.
+		Artemisia_ludoviciana
+		Gnaphalium_sp.
+		Gnaphalium_uliginosum
+		Gnaphalium_purpureum
+		Gamochaeta_purpurea
+		Antennaria_plantaginifolia
+		Antennaria_parlinii
+		Antennaria_sp.
+		Antennaria_neglecta
+		Doellingeria_umbellata
+		Heterotheca_villosa
+		Symphyotrichum_boreale
+		Erigeron_sp.
+		Erigeron_canadensis
+		Erigeron_philadelphicus
+		Erigeron_strigosus
+		Erigeron_annuus
+		Euthamia_graminifolia
+		'Symphyotrichumnovae-angliae'
+		Symphyotrichum_oolentangiense
+		Symphyotrichum_puniceum
+		Symphyotrichum_ericoides
+		Symphyotrichum_lanceolatum
+		Eurybia_macrophylla
+		Solidago_rigida
+		Solidago_ptarmicoides
+		Solidago_sp.
+		Solidago_canadensis
+		Solidago_nemoralis
+		Solidago_speciosa
+		Solidago_altissima
+		Solidago_missouriensis
+		Solidago_juncea
+		Solidago_gigantea
+	;
+END;
+BEGIN TREES;
+	TRANSLATE
+		1	Juniperus_communis,
+		2	Juniperus_sp.,
+		3	Juniperus_virginiana,
+		4	Picea_sp.,
+		5	Larix_laricina,
+		6	Pinus_strobus,
+		7	Pinus_resinosa,
+		8	Pinus_sp.,
+		9	Pinus_banksiana,
+		10	Lemna_sp.,
+		11	Sagittaria_latifolia,
+		12	Uvularia_sessilifolia,
+		13	Streptopus_lanceolatus,
+		14	Smilax_herbacea,
+		15	Hypoxis_hirsuta,
+		16	Platanthera_lacera,
+		17	Iris_versicolor,
+		18	Elymus_trachycaulus,
+		19	Allium_stellatum,
+		20	Allium_sp.,
+		21	Allium_cernuum,
+		22	Sisyrinchium_campestre,
+		23	Asparagus_officinalis,
+		24	Maianthemum_stellatum,
+		25	Maianthemum_canadense,
+		26	Polygonatum_sp.,
+		27	Polygonatum_biflorum,
+		28	Tradescantia_sp.,
+		29	Tradescantia_bracteata,
+		30	Tradescantia_occidentalis,
+		31	Typha_sp.,
+		32	Typha_latifolia,
+		33	Typha_angustifolia,
+		34	Juncus_sp.,
+		35	Juncus_tenuis,
+		36	Hierochloe_odorata,
+		37	Anthoxanthum_nitens,
+		38	Scleria_triglomerata,
+		39	Eleocharis_sp.,
+		40	Eleocharis_geniculata,
+		41	Cyperus_filiculmis,
+		42	Cyperus_schweinitzii,
+		43	Cyperus_sp.,
+		44	Cyperus_strigosus,
+		45	Dulichium_arundinaceum,
+		46	Scirpus_cyperinus,
+		47	Carex_disperma,
+		48	Carex_echinata,
+		49	Carex_interior,
+		50	Carex_canescens,
+		51	Carex_vulpinoidea,
+		52	Carex_foenea,
+		53	Carex_diandra,
+		54	Carex_bicknellii,
+		55	Carex_lativena,
+		56	Carex_bebbii,
+		57	Carex_scoparia,
+		58	Carex_sp.,
+		59	Carex_chordorrhiza,
+		60	Carex_haydenii,
+		61	Carex_stricta,
+		62	Carex_pensylvanica,
+		63	Carex_gracillima,
+		64	Carex_oligosperma,
+		65	Carex_lasiocarpa,
+		66	Carex_rostrata,
+		67	Carex_comosa,
+		68	Carex_lacustris,
+		69	Chamaenerion_angustifolium,
+		70	Cenchrus_americanus,
+		71	Pilosella_aurantiaca,
+		72	Koeleria_micrathera,
+		73	Frangula_alnus,
+		74	Demia_testudo,
+		75	Bouteloua_dactyloides,
+		76	Leersia_oryzoides,
+		77	Glyceria_sp.,
+		78	Glyceria_grandis,
+		79	Miscanthus_giganteus,
+		80	Schizachne_purpurascens,
+		81	Bromus_tectorum,
+		82	Bromus_ciliatus,
+		83	Bromus_kalmii,
+		84	Bromus_sp.,
+		85	Bromus_inermis,
+		86	Lysimachia_borealis,
+		87	Secale_cereale,
+		88	Secale_vavilovii,
+		89	Elymus_repens,
+		90	Elymus_canadensis,
+		91	Andropogon_gerardii,
+		92	Andropogon_gerardi,
+		93	Phalaris_arundinacea,
+		94	Calamagrostis_canadensis,
+		95	Agrostis_sp.,
+		96	Agrostis_scabra,
+		97	Phleum_pratense,
+		98	Festuca_rubra,
+		99	Festuca_guestphalica,
+		100	Festuca_ovina,
+		101	Festuca_sp.,
+		102	Festuca_guestfalica,
+		103	Lolium_multiflorum,
+		104	Poa_sp.,
+		105	Poa_pratensis,
+		106	Poa_compressa,
+		107	Poa_nemoralis,
+		108	Poa_palustris,
+		109	Hesperostipa_spartea,
+		110	Hesperostipa_comata,
+		111	Calamagrostis_stricta,
+		112	Calamagrostis_inexpansa,
+		113	Koeleria_pyramidata,
+		114	Bouteloua_gracilis,
+		115	Danthonia_spicata,
+		116	Aristida_sp.,
+		117	Aristida_tuberculosa,
+		118	Aristida_basiramea,
+		119	Eragrostis_trichodes,
+		120	Eragrostis_spectabilis,
+		121	Cycloloma_atriplicifolium,
+		122	Dysphania_atriplicifolia,
+		123	Muhlenbergia_racemosa,
+		124	Bouteloua_aristidoides,
+		125	Bouteloua_curtipendula,
+		126	Bouteloua_hirsuta,
+		127	Sporobolus_rigidus,
+		128	Sporobolus_heterolepis,
+		129	Aster_sp.,
+		130	Sporobolus_cryptandrus,
+		131	Paspalum_setaceum,
+		132	Setaria_sp.,
+		133	Setaria_viridis,
+		134	Setaria_italica,
+		135	Digitaria_sp.,
+		136	Digitaria_sanguinalis,
+		137	Digitaria_cognata,
+		138	Cenchrus_longispinus,
+		139	Roosia_sp.,
+		140	Digitaria_ischaemum,
+		141	Chondrosum_hirsutum,
+		142	Trachypogon_spicatus,
+		143	Ageratina_liebmannii,
+		144	Sorghastrum_nutans,
+		145	Schizachyrium_scoparium,
+		146	Calamagrostis_sp.,
+		147	Bouteloua_sp.,
+		148	Panicum_miliaceum,
+		149	Panicum_capillare,
+		150	Panicum_virgatum,
+		151	Panicum_sp.,
+		152	Panicum_acuminatum,
+		153	Dichanthelium_praecocius,
+		154	Panicum_oligosanthes,
+		155	Panicum_perlongum,
+		156	Dichanthelium_oligosanthes,
+		157	Dichanthelium_acuminatum,
+		158	Panicum_leibergii,
+		159	Dichanthelium_linearifolium,
+		160	Caltha_palustris,
+		161	Anemone_patens,
+		162	Pulsatilla_patens,
+		163	Anemone_quinquefolia,
+		164	Anemone_virginiana,
+		165	Anemone_cylindrica,
+		166	Delphinium_carolinianum,
+		167	Thalictrum_dioicum,
+		168	Thalictrum_dasycarpum,
+		169	Ranunculus_rhomboideus,
+		170	Aquilegia_canadensis,
+		171	Parthenocissus_quinquefolia,
+		172	Vitis_vulpina,
+		173	Vitis_riparia,
+		174	Parthenocissus_inserta,
+		175	Parthenocissus_vitacea,
+		176	Parthenocissus_sp.,
+		177	Ribes_hirtellum,
+		178	Heuchera_richardsonii,
+		179	Saxifraga_pensylvanica,
+		180	Micranthes_pensylvanica,
+		181	Penthorum_sedoides,
+		182	Geranium_maculatum,
+		183	Ludwigia_polycarpa,
+		184	Circaea_lutetiana,
+		185	Epilobium_sp.,
+		186	Epilobium_leptophyllum,
+		187	Epilobium_ciliatum,
+		188	Oenothera_parviflora,
+		189	Oenothera_biennis,
+		190	Oenothera_sp.,
+		191	Oenothera_rhombipetala,
+		192	Zanthoxylum_americanum,
+		193	Acer_negundo,
+		194	Acer_sp.,
+		195	Acer_rubrum,
+		196	Toxicodendron_radicans,
+		197	Rhus_sp.,
+		198	Rhus_glabra,
+		199	Rhus_typhina,
+		200	Lechea_stricta,
+		201	Helianthemum_bicknellii,
+		202	Crocanthemum_bicknellii,
+		203	Berteroa_incana,
+		204	Leavenworthia_sp.,
+		205	Sisymbrium_altissimum,
+		206	Barbarea_vulgaris,
+		207	Arabis_divaricarpa,
+		208	Boechera_divaricarpa,
+		209	Turritis_glabra,
+		210	Lepidium_densiflorum,
+		211	Lepidium_sp.,
+		212	Lepidium_virginicum,
+		213	'Capsellabursa-pastoris',
+		214	Arabis_sp.,
+		215	Arabis_hirsuta,
+		216	Celastrus_scandens,
+		217	Petalostemon_candidus,
+		218	Oxalis_sp.,
+		219	Oxalis_stricta,
+		220	Euphorbia_sp.,
+		221	Euphorbia_corollata,
+		222	Euphorbia_geyeri,
+		223	Euphorbia_glyptosperma,
+		224	Euphorbia_maculata,
+		225	Viola_selkirkii,
+		226	Viola_pedatifida,
+		227	Viola_macloskeyi,
+		228	Viola_palustris,
+		229	Viola_pedata,
+		230	Viola_sp.,
+		231	Viola_sagittata,
+		232	Populus_grandidentata,
+		233	Populus_tremuloides,
+		234	Populus_deltoides,
+		235	Populus_balsamifera,
+		236	Salix_pyrifolia,
+		237	Salix_bebbiana,
+		238	Salix_sp.,
+		239	Salix_pedicellaris,
+		240	Salix_discolor,
+		241	Salix_interior,
+		242	Salix_petiolaris,
+		243	Salix_humilis,
+		244	Salix_serissima,
+		245	Elymus_smithii,
+		246	Parogonum_ciliinode,
+		247	Ceanothus_americanus,
+		248	Parietaria_pensylvanica,
+		249	Pilea_pumila,
+		250	Urtica_dioica,
+		251	Ulmus_sp.,
+		252	Ulmus_pumila,
+		253	Ulmus_americana,
+		254	Spiraea_tomentosa,
+		255	Spiraea_alba,
+		256	Prunus_virginiana,
+		257	Prunus_serotina,
+		258	Prunus_americana,
+		259	Prunus_sp.,
+		260	Prunus_pensylvanica,
+		261	Prunus_pumila,
+		262	Malus_domestica,
+		263	Amelanchier_arborea,
+		264	Aronia_melanocarpa,
+		265	Agrimonia_sp.,
+		266	Amelanchier_laevis,
+		267	Amelanchier_interior,
+		268	Amelanchier_alnifolia,
+		269	Amelanchier_sanguinea,
+		270	Rubus_idaeus,
+		271	Rubus_pubescens,
+		272	Rubus_occidentalis,
+		273	Rubus_flagellaris,
+		274	Rubus_sp.,
+		275	Rubus_canadensis,
+		276	Rubus_allegheniensis,
+		277	Rosa_carolina,
+		278	Rosa_arkansana,
+		279	Rosa_blanda,
+		280	Potentilla_sp.,
+		281	Potentilla_simplex,
+		282	Potentilla_norvegica,
+		283	Potentilla_recta,
+		284	Potentilla_argentea,
+		285	Amelanchier_spicata,
+		286	Comarum_palustre,
+		287	Amelanchier_sp.,
+		288	Potentilla_arguta,
+		289	Drymocallis_arguta,
+		290	Fragaria_virginiana,
+		291	Fragaria_sp.,
+		292	Fragaria_vesca,
+		293	Alnus_incana,
+		294	Corylus_americana,
+		295	Betula_papyrifera,
+		296	Betula_pumila,
+		297	Betula_alleghaniensis,
+		298	Quercus_petraea,
+		299	Quercus_ellipsoidalis,
+		300	Quercus_sp.,
+		301	Quercus_alba,
+		302	Quercus_macrocarpa,
+		303	Polygala_sp.,
+		304	Polygala_polygama,
+		305	Polygala_sanguinea,
+		306	Chamaecrista_fasciculata,
+		307	Strophostyles_leiosperma,
+		308	Amphicarpa_bracteata,
+		309	Amphicarpaea_bracteata,
+		310	Desmodium_glutinosum,
+		311	Hylodesmum_glutinosum,
+		312	Lespedeza_capitata,
+		313	Calamovilfa_longifolia,
+		314	Desmodium_canadense,
+		315	Dalea_candida,
+		316	Spartina_pectinata,
+		317	Amorpha_canescens,
+		318	Dalea_purpurea,
+		319	Dalea_villosa,
+		320	Lupinus_sp.,
+		321	Lupinus_perennis,
+		322	Baptisia_alba,
+		323	Senecio_sp.,
+		324	Senecio_aureus,
+		325	Robinia_pseudoacacia,
+		326	Trientalis_borealis,
+		327	Astragalus_canadensis,
+		328	Buchloe_dactyloides,
+		329	Medicago_lupulina,
+		330	Medicago_sp.,
+		331	Medicago_sativa,
+		332	Melilotus_sp.,
+		333	Melilotus_officinalis,
+		334	Melilotus_albus,
+		335	Lathyrus_venosus,
+		336	Lathyrus_ochroleucus,
+		337	Vicia_sativa,
+		338	Vicia_setifolia,
+		339	Vicia_villosa,
+		340	Trifolium_hybridum,
+		341	Trifolium_repens,
+		342	Trifolium_pratense,
+		343	Trifolium_sp.,
+		344	Trifolium_arvense,
+		345	Comandra_umbellata,
+		346	Pennisetum_glaucum,
+		347	Maianthemum_racemosum,
+		348	Hypericum_majus,
+		349	Triadenum_fraseri,
+		350	Salsola_kali,
+		351	Amaranthus_retroflexus,
+		352	Sporobolus_michauxianus,
+		353	Chenopodium_sp.,
+		354	Chenopodium_leptophyllum,
+		355	Chenopodium_album,
+		356	Chenopodium_hybridum,
+		357	Chenopodiastrum_hybridum,
+		358	Campanula_aparinoides,
+		359	Campanula_sp.,
+		360	Palustricodon_aparinoides,
+		361	Silene_latifolia,
+		362	Moehringia_lateriflora,
+		363	Stellaria_media,
+		364	Silene_sp.,
+		365	Silene_antirrhina,
+		366	Stellaria_longifolia,
+		367	Portulaca_oleracea,
+		368	Petalostemon_purpureus,
+		369	Mollugo_verticillata,
+		370	Mirabilis_hirsuta,
+		371	Mirabilis_albida,
+		372	Mirabilis_nyctaginea,
+		373	Cornus_alternifolia,
+		374	Cornus_sericea,
+		375	Cornus_sp.,
+		376	Cornus_racemosa,
+		377	Elymus_violaceus,
+		378	Lysimachia_ciliata,
+		379	Lysimachia_thyrsiflora,
+		380	Phlox_sp.,
+		381	Phlox_pilosa,
+		382	Phlox_paniculata,
+		383	Impatiens_capensis,
+		384	Pyrola_sp.,
+		385	Pyrola_rotundifolia,
+		386	Chamaedaphne_calyculata,
+		387	Vaccinium_sp.,
+		388	Vaccinium_angustifolium,
+		389	Vaccinium_myrtilloides,
+		390	Ilex_sp.,
+		391	Ilex_verticillata,
+		392	Sporobolus_sp.,
+		393	Rhamnus_sp.,
+		394	Rhamnus_cathartica,
+		395	Polygonum_sp.,
+		396	Polygonum_tenue,
+		397	Polygonella_articulata,
+		398	Fallopia_cilinodis,
+		399	Fallopia_convolvulus,
+		400	Fallopia_scandens,
+		401	Rumex_sp.,
+		402	Rumex_britannica,
+		403	Rumex_mexicanus,
+		404	Rumex_acetosella,
+		405	Persicaria_thunbergii,
+		406	Persicaria_sagittata,
+		407	Persicaria_amphibia,
+		408	Persicaria_lapathifolia,
+		409	Persicaria_pensylvanica,
+		410	Persicaria_maculosa,
+		411	Persicaria_hydropiper,
+		412	Convolvulus_arvensis,
+		413	Solanum_carolinense,
+		414	Solanum_dulcamara,
+		415	Solanum_americanum,
+		416	Solanum_nigrum,
+		417	Physalis_virginiana,
+		418	Physalis_sp.,
+		419	Physalis_heterophylla,
+		420	Physalis_pubescens,
+		421	Gentiana_andrewsii,
+		422	Houstonia_longifolia,
+		423	Galium_boreale,
+		424	Galium_asperellum,
+		425	Galium_obtusum,
+		426	Galium_triflorum,
+		427	Galium_trifidum,
+		428	Galium_trifolium,
+		429	Galium_concinnum,
+		430	Galium_sp.,
+		431	Galium_aparine,
+		432	Apocynum_androsaemifolium,
+		433	Apocynum_cannabinum,
+		434	Gymnema_sp.,
+		435	Asclepias_sp.,
+		436	Asclepias_verticillata,
+		437	Asclepias_incarnata,
+		438	Asclepias_viridiflora,
+		439	Asclepias_ovalifolia,
+		440	Asclepias_syriaca,
+		441	Asclepias_tuberosa,
+		442	Asclepias_exaltata,
+		443	Hackelia_virginiana,
+		444	Hackelia_deflexa,
+		445	Lithospermum_carolinense,
+		446	Lithospermum_sp.,
+		447	Lithospermum_canescens,
+		448	Lithospermum_caroliniense,
+		449	Fraxinus_nigra,
+		450	Fraxinus_americana,
+		451	Fraxinus_pennsylvanica,
+		452	Penstemon_digitalis,
+		453	Penstemon_gracilis,
+		454	Penstemon_sp.,
+		455	Penstemon_cobaea,
+		456	Penstemon_grandiflorus,
+		457	Linaria_vulgaris,
+		458	Veronicastrum_virginicum,
+		459	Plantago_major,
+		460	Plantago_lanceolata,
+		461	Plantago_sp.,
+		462	Plantago_patagonica,
+		463	Verbascum_thapsus,
+		464	Verbena_hastata,
+		465	Verbena_stricta,
+		466	Verbena_bracteata,
+		467	Seemannia_sylvatica,
+		468	Mimulus_ringens,
+		469	Phryma_leptostachya,
+		470	Utricularia_sp.,
+		471	Pedicularis_sp.,
+		472	Pedicularis_canadensis,
+		473	Scutellaria_lateriflora,
+		474	Scutellaria_parvula,
+		475	Scutellaria_galericulata,
+		476	Stachys_sp.,
+		477	Stachys_palustris,
+		478	Stachys_tenuifolia,
+		479	Mosla_dianthera,
+		480	Lycopus_americanus,
+		481	Lycopus_sp.,
+		482	Lycopus_uniflorus,
+		483	Prunella_vulgaris,
+		484	Agastache_foeniculum,
+		485	Nepeta_cataria,
+		486	Glechoma_hederacea,
+		487	Monarda_fistulosa,
+		488	Pycnanthemum_virginianum,
+		489	Hedeoma_hispida,
+		490	Monarda_punctata,
+		491	Aralia_nudicaulis,
+		492	Colladonia_sp.,
+		493	Cicuta_bulbifera,
+		494	Lichtensteinia_sp.,
+		495	Zizia_aptera,
+		496	Zizia_aurea,
+		497	Viburnum_lentago,
+		498	Symphoricarpos_occidentalis,
+		499	Lonicera_dioica,
+		500	Lonicera_morrowii,
+		501	Lonicera_tatarica,
+		502	Campanula_rotundifolia,
+		503	Lobelia_spicata,
+		504	Lobelia_siphilitica,
+		505	Tragopogon_duarius,
+		506	Tragopogon_dubius,
+		507	Cirsium_discolor,
+		508	Cirsium_sp.,
+		509	Cirsium_altissimum,
+		510	Cirsium_arvense,
+		511	Vernonia_fasciculata,
+		512	Hieracium_crassescens,
+		513	Hieracium_sp.,
+		514	Pilosella_longipila,
+		515	Hieracium_longipilum,
+		516	Hieracium_umbellatum,
+		517	Lactuca_canadensis,
+		518	Lactuca_biennis,
+		519	Lactuca_sp.,
+		520	Lactuca_serriola,
+		521	Krigia_biflora,
+		522	Sonchus_arvensis,
+		523	Crepis_tectorum,
+		524	Xyris_torta,
+		525	Combretum_sp.,
+		526	Nabalus_racemosus,
+		527	Nabalus_albus,
+		528	Taraxacum_officinale,
+		529	Taraxacum_campylodes,
+		530	Taraxacum_sp.,
+		531	Petalostemum_sp.,
+		532	Coreopsis_palmata,
+		533	Bidens_tripartita,
+		534	Bidens_cernua,
+		535	Bidens_coronata,
+		536	Bidens_sp.,
+		537	Bidens_trichosperma,
+		538	Helenium_autumnale,
+		539	Eupatorium_maculatum,
+		540	Eutrochium_maculatum,
+		541	Eupatorium_perfoliatum,
+		542	Liatris_aspera,
+		543	Liatris_ligulistylis,
+		544	Liatris_pycnostachya,
+		545	Ratibida_pinnata,
+		546	Rudbeckia_hirta,
+		547	Echinacea_serotina,
+		548	Echinacea_purpurea,
+		549	Heliopsis_helianthoides,
+		550	Ambrosia_artemisiifolia,
+		551	Ambrosia_psilostachya,
+		552	Helianthus_sp.,
+		553	Helianthus_hirsutus,
+		554	Helianthus_petiolaris,
+		555	Helianthus_laetiflorus,
+		556	Helianthus_giganteus,
+		557	Packera_aurea,
+		558	Packera_paupercula,
+		559	Erechtites_hieracifolia,
+		560	Erechtites_hieraciifolius,
+		561	Achillea_sp.,
+		562	Achillea_millefolium,
+		563	Artemisia_campestris,
+		564	Artemisia_sp.,
+		565	Artemisia_ludoviciana,
+		566	Gnaphalium_sp.,
+		567	Gnaphalium_uliginosum,
+		568	Gnaphalium_purpureum,
+		569	Gamochaeta_purpurea,
+		570	Antennaria_plantaginifolia,
+		571	Antennaria_parlinii,
+		572	Antennaria_sp.,
+		573	Antennaria_neglecta,
+		574	Doellingeria_umbellata,
+		575	Heterotheca_villosa,
+		576	Symphyotrichum_boreale,
+		577	Erigeron_sp.,
+		578	Erigeron_canadensis,
+		579	Erigeron_philadelphicus,
+		580	Erigeron_strigosus,
+		581	Erigeron_annuus,
+		582	Euthamia_graminifolia,
+		583	'Symphyotrichumnovae-angliae',
+		584	Symphyotrichum_oolentangiense,
+		585	Symphyotrichum_puniceum,
+		586	Symphyotrichum_ericoides,
+		587	Symphyotrichum_lanceolatum,
+		588	Eurybia_macrophylla,
+		589	Solidago_rigida,
+		590	Solidago_ptarmicoides,
+		591	Solidago_sp.,
+		592	Solidago_canadensis,
+		593	Solidago_nemoralis,
+		594	Solidago_speciosa,
+		595	Solidago_altissima,
+		596	Solidago_missouriensis,
+		597	Solidago_juncea,
+		598	Solidago_gigantea
+	;
+	TREE * UNTITLED = [&R] (((1:5.036482,(2:5.029945835,3:5.029945835):0.006536165391):121.786278,((4:19.0557058,5:19.0557058):19.7418752,(6:20.858868,(7:10.8904,(8:2.945334483,9:2.945334483):7.945065517):9.968468):17.938713):88.025179):146.158019,(((10:2.13856641,11:2.13856641):123.8566746,(((12:87.908124,(13:51.645192,14:51.645192):36.262932):13.106144,(15:85.005628,(16:85.003399,(17:72.396907,((18:33.97250227,(19:3.658025,(20:3.545287226,21:3.545287226):0.1127377745):30.31447727):27.24257173,((22:42.08988,23:42.08988):13.352038,((24:6.344061,25:6.344061):8.793873,(26:4.882482936,27:4.882482936):10.25545106):40.303985):5.773155):11.181835):12.606492):0.002229):16.00864):16.336629,(((28:22.59003253,(29:0.000876,30:0.000876):22.58915653):87.86185847,((31:32.73491903,(32:10.347613,33:10.347613):22.38730603):74.90736997,(((34:7.195186526,35:7.195186526):59.80361547,(36:59.1729901,37:59.1729901):7.825811898):18.179102,(38:41.153289,(((39:0.4243470698,40:0.4243470698):22.83483293,(41:0.87832,(42:0.732717,(43:0.3349098578,44:0.3349098578):0.3978071422):0.145603):22.38086):3.174498,(45:16.117554,(46:14.854652,((47:4.237562,((48:1.611929,49:1.611929):2.208658,((50:3.263728,51:3.263728):0.556552,((52:2.776281,53:2.776281):0.71655,(54:2.522527,(55:0.08407037415,56:0.08407037415):2.438456626):0.970304):0.327449):0.000307):0.416976):1.688994,(57:5.255445,((58:4.724185705,59:4.724185705):0.3956022949,((60:4.493545,61:4.493545):0.004169,(62:3.95034,(63:3.949981,(64:2.304981,(65:1.633374,(66:1.632852,(67:0.397146,68:0.397146):1.235706):0.000523):0.671607):1.645):0.000359):0.547374):0.622073):0.135658):0.671111):8.928096):1.262902):10.316124):14.719611):44.024615):22.464384):2.809602):2.306999,(((69:48.05108,70:48.05108):15.566752,(71:58.646426,(72:0.9946993506,73:0.9946993506):57.65172665):4.971406):17.445857,((74:0.5896782587,75:0.5896782587):68.45006974,((76:52.441833,(((77:8.134392403,78:8.134392403):7.192930597,(79:0.1368548148,80:0.1368548148):15.19046819):29.238693,(((81:5.242115,((82:0.821046,83:0.821046):2.768572,(84:0.7605884239,85:0.7605884239):2.829029576):1.652497):20.486451,((86:16.655081,(87:0.006315,88:0.006315):16.648766):5.11889,(89:20.102785,(90:8.153976,(91:1.307615776,92:1.307615776):6.846360224):11.948809):1.671186):3.954595):14.5053,((93:8.363595,(94:8.361896,(95:1.88823647,96:1.88823647):6.47365953):0.0017):29.492713,((97:23.437341,(98:8.069549,(99:1.60342,(100:1.599102,(101:0.9395198715,102:0.9395198715):0.6595821285):0.004318):6.466129):15.367792):10.761425,(103:23.315767,(((104:4.549380015,105:4.549380015):6.310310985,(106:1.070133,(107:1.069476,108:1.069476):0.000657):9.789558):3.91093,((109:0.225896,110:0.225896):11.730894,(111:6.718802,(112:1.219161018,113:1.219161018):5.499640982):5.237989):2.813831):8.545145):10.883):3.657542):2.377558):4.33215):7.875817):2.520872,(((114:5.646160762,115:5.646160762):31.75277924,((116:10.2386798,(117:5.878094,118:5.878094):4.360585796):24.8040312,((119:12.74564,120:12.74564):12.049427,((121:1.68093499,122:1.68093499):18.11902101,((123:12.287986,(124:7.969907,(125:7.603645,126:7.603645):0.366262):4.318079):6.721604,((127:6.267758,128:6.267758):3.50384,(129:5.249959595,130:5.249959595):4.521638405):9.237991):0.790366):4.995112):10.247643):2.356229):1.521057,((131:18.346275,((132:10.92977758,(133:1.496471,134:1.496471):9.433306584):3.530101416,(135:6.232131729,(136:6.221509,(137:5.769394,(138:4.859174,(139:1.034737145,140:1.034737145):3.824436855):0.91022):0.452115):0.01062272924):8.227747271):3.886396):1.491057,((141:10.05932228,(142:5.374,((143:1.555906942,144:1.555906942):2.911345058,(145:0.8559883899,(146:0.3076959142,147:0.3076959142):0.5482924757):3.61126361):0.906747):4.685322283):8.471412717,(((148:1.530909,149:1.530909):9.079123,(150:7.736853204,(151:3.670737507,152:3.670737507):4.066115696):2.873178796):4.20239,((153:10.39211783,(154:0.2546927597,155:0.2546927597):10.13742507):1.014015969,(156:0.983445,(157:0.982105,(158:0.6753456414,159:0.6753456414):0.3067593586):0.001341):10.4226878):3.406288202):3.718313):1.306597):19.082663):16.042711):14.07704):12.023945):31.6952):4.592008):8.64434):9.76283,(((160:14.22002471,(161:14.17718163,162:14.17718163):0.04284308207):28.33069529,((163:6.361074,(164:1.571013,165:1.571013):4.790061):34.585024,(166:39.678972,((167:4.580597,168:4.580597):14.477651,(169:8.489463294,170:8.489463294):10.56878471):20.620724):1.267126):1.604622):89.145545,((((171:37.651294,(172:34.935824,173:34.935824):2.71547):12.179321,(174:18.80885726,(175:10.80257488,176:10.80257488):8.006282379):31.02175774):72.269289,((177:84.077906,(178:33.767281,(179:2.751322125,180:2.751322125):31.01595887):50.310625):37.690055,(181:121.527843,((182:116.993198,((183:55.906573,(184:42.071158,((185:10.98165445,(186:9.147954,187:9.147954):1.833700455):14.77119455,((188:0.418526,189:0.418526):2.584957,(190:1.355949476,191:1.355949476):1.647533524):22.749366):16.31831):13.835415):55.056817,((192:82.35456,((193:13.331261,(194:3.553227825,195:3.553227825):9.778033175):66.587082,(196:19.480204,(197:5.861261274,(198:1.022314,199:1.022314):4.838947274):13.61894273):60.438139):2.436217):21.903501,((200:32.015663,(201:17.43144158,202:17.43144158):14.58422142):59.874519,(203:27.449167,((204:0.0448980638,205:0.0448980638):22.21197794,(206:17.799311,((207:9.310675427,208:9.310675427):7.715372573,(209:16.453967,((210:4.967591,(211:2.184335255,212:2.184335255):2.783255745):11.016402,(213:9.751197,(214:0.8453844377,215:0.8453844377):8.905812562):6.232796):0.469974):0.572081):0.773263):4.457565):5.192291):64.441015):12.367879):6.705329):6.029808):1.600167,((216:112.032474,((217:12.49689594,(218:7.551007713,219:7.551007713):4.945888226):97.03149106,(((220:0.1493101378,221:0.1493101378):10.34473586,(222:5.291829,(223:1.276506,224:1.276506):4.015323):5.202217):86.912336,((225:11.210066,((226:2.617448,(227:0.000657,228:0.000657):2.616791):1.975726,(229:3.857819,(230:0.741063917,231:0.741063917):3.116755083):0.735355):6.616892):83.151991,((232:1.902832,233:1.902832):36.135832,(234:19.590606,(235:14.843483,((236:0.002063,237:0.002063):7.340371,((238:0.1897808079,239:0.1897808079):5.328149192,(240:5.517637,(241:4.166214,(242:0.477364,(243:0.476211,244:0.476211):0.001153):3.68885):1.351423):0.000292):1.824504):7.501049):4.747124):18.448058):56.323393):3.044325):12.122004):2.504087):4.526993,((((245:0.001176,246:0.001176):99.490518,(247:90.177534,((248:46.699107,(249:42.207822,250:42.207822):4.491285):32.471537,(251:25.96689313,(252:6.436052,253:6.436052):19.53084113):53.20375087):11.00689):9.31416):6.903459,(((254:8.426983,255:8.426983):45.062922,(((256:23.318949,257:23.318949):3.211357,(258:18.078497,(259:15.35686856,(260:2.046614,261:2.046614):13.31025456):2.721628441):8.451809):24.202964,((262:3.051544,(263:1.717293,264:1.717293):1.334251):7.967827,(265:10.48934375,(266:2.134398,(267:1.468373,(268:1.467713,269:1.467713):0.00066):0.666025):8.354945748):0.5300272518):39.713899):2.756635):41.071277,((270:63.269488,(271:62.282456,(272:60.378093,(273:57.03003,(274:36.61847602,(275:0.002106,276:0.002106):36.61637002):20.41155398):3.348063):1.904363):0.987032):21.733302,((277:0.50097,(278:0.499908,279:0.499908):0.001062):81.534212,(((280:15.45931577,281:15.45931577):53.20511423,(282:58.520473,(283:0.896551,284:0.896551):57.623922):10.143957):10.017331,((285:4.114945059,286:4.114945059):56.14455494,(287:44.24843836,((288:4.077538082,289:4.077538082):26.03421892,(290:1.924495,(291:1.043174792,292:1.043174792):0.8813202079):28.187262):14.13668136):16.01106164):18.422261):3.353421):2.967608):9.558392):11.833971):8.440926,(((293:68.275451,(294:64.8589,(295:39.6479,(296:9.132775,297:9.132775):30.515125):25.211):3.416551):29.604114,((298:3.814289,299:3.814289):7.962412,(300:10.37547199,(301:2.845909,302:2.845909):7.529562989):1.401229011):86.102864):15.766713,((303:10.81026462,(304:8.322299,305:8.322299):2.487965616):85.26465138,(306:77.963189,(((307:18.336359,(308:4.315272069,309:4.315272069):14.02108693):12.110722,((310:7.323412307,311:7.323412307):10.91701469,(312:15.065412,(313:8.492890188,314:8.492890188):6.572521812):3.175015):12.206654):33.066718,(((315:34.186352,(316:15.026735,317:15.026735):19.159617):21.796069,((318:0.001199,319:0.001199):51.851575,((320:16.1201059,321:16.1201059):29.5748661,(322:5.539381279,(323:2.129055421,324:2.129055421):3.410325858):40.15559072):6.157803):4.129647):2.661105,(325:49.426523,((326:9.818735573,327:9.818735573):22.44112543,(328:29.84468013,(((329:10.111597,(330:0.01752135956,331:0.01752135956):10.09407564):4.660104,(332:8.702076623,(333:0.917977,334:0.917977):7.784099623):6.069624377):3.787543,(((335:0.46665,336:0.46665):10.893661,(337:10.791918,(338:0.8217172526,339:0.8217172526):9.970200747):0.568393):6.783229,((340:5.929612,341:5.929612):2.363513,(342:5.318794,(343:0.3296079167,344:0.3296079167):4.989186083):2.974331):9.850415):0.415704):11.28543613):2.415180872):17.166662):9.217003):4.870273):14.44939):18.111726):17.571363):1.189801):1.723389):2.033898):2.934478):0.240117):0.331944):0.737547,((345:117.274771,(((346:15.85297964,347:15.85297964):65.66774536,(348:25.621443,(349:0.001178,350:0.001178):25.620266):55.899281):23.335084,((351:65.069963,((352:43.825037,(353:3.876596705,(354:1.08322,355:1.08322):2.793376705):39.94844029):8.016774,((356:11.02984586,357:11.02984586):28.42063114,(358:8.932680299,(359:5.733604264,360:5.733604264):3.199076035):30.5177967):12.391334):13.228153):22.217643,((361:50.819834,(362:49.629683,(363:36.759758,(364:34.81024696,(365:33.253219,366:33.253219):1.557027958):1.949511042):12.869925):1.190151):34.5729,((367:73.10879,(368:5.250885716,369:5.250885716):67.85790428):9.846651,(370:51.95632642,(371:2.235653,372:2.235653):49.72067342):30.99911458):2.437293):1.894872):17.568202):12.418963):3.614999,((373:23.947734,(374:18.102009,(375:8.345232716,376:8.345232716):9.756776284):5.845725):85.663773,((((377:56.388481,(378:23.947146,379:23.947146):32.441335):35.409016,(380:9.774394737,(381:0.7511,382:0.7511):9.023294737):82.02310226):2.93875,(383:88.723133,((384:5.506094915,385:5.506094915):40.63742309,(386:12.364228,(387:8.512627108,(388:0.436084,389:0.436084):8.076543108):3.851600892):33.77929):42.579615):6.013113):13.527292,(((390:27.30722899,391:27.30722899):75.57109201,(((392:39.26254552,(393:38.20701441,394:38.20701441):1.055531114):31.45930748,(((395:29.74688898,396:29.74688898):11.39946902,(397:31.341761,(398:12.45549853,(399:4.803677,400:4.803677):7.651821528):18.88626247):9.804596):14.244409,(((401:12.83561734,402:12.83561734):2.563941657,(403:12.25810642,404:12.25810642):3.141452578):34.601218,((405:10.263102,406:10.263102):7.787876,(407:7.915886,((408:0.000973,409:0.000973):3.41157,(410:2.855086,411:2.855086):0.557457):4.503343):10.135092):31.9498):5.389989):15.331086):28.228714,(((412:66.649827,((413:12.514139,(414:9.777619,(415:1.579929,416:1.579929):8.19769):2.73652):5.88232,(417:4.971107,(418:2.925135412,(419:1.89235,420:1.89235):1.032785412):2.045971588):13.425352):48.253368):19.263312,(421:76.575584,((422:22.137854,((423:5.11827,(424:2.617408566,425:2.617408566):2.500861434):1.283943,((426:1.666218,427:1.666218):2.770913,((428:2.171464072,429:2.171464072):2.265358928,(430:0.6861299597,431:0.6861299597):3.75069304):0.000308):1.965082):15.735641):45.590011,((432:5.593832,433:5.593832):16.300629,(434:5.710930684,((435:2.350770771,436:2.350770771):0.6519122289,(437:3.001552,((438:2.133078,439:2.133078):0.001172,(440:1.824523,(441:1.824357,442:1.824357):0.000166):0.309727):0.867302):0.001131):2.708247684):16.18353032):45.833404):8.847719):9.337555):3.837931,(((443:4.851591,444:4.851591):21.142796,(445:3.939796,(446:3.904160717,(447:1.162797,448:1.162797):2.741363717):0.03563528256):22.054591):62.253392,((449:8.045373,(450:1.643281,451:1.643281):6.402092):62.975238,((((452:1.757684,453:1.757684):28.79484095,(454:7.442245347,(455:5.126634405,456:5.126634405):2.315610942):23.11027961):14.60659305,(457:41.36419,(458:30.533389,(459:16.608587,(460:12.66298,(461:6.71906301,462:6.71906301):5.94391699):3.945607):13.924802):10.830801):3.794928):12.939714,(463:51.847276,((464:1.517018,(465:0.081094,466:0.081094):1.435924):45.832062,((467:41.187365,(468:33.240554,(469:30.715519,(470:12.22093875,(471:6.588522447,472:6.588522447):5.632416299):18.49458025):2.525035):7.946811):3.498373,(((473:1.269804,(474:1.269215,475:1.269215):0.000589):28.491539,(476:23.47556052,(477:7.075822,478:7.075822):16.39973852):6.285782483):4.519077,(479:25.357754,((480:7.743031,(481:3.629064981,482:3.629064981):4.113966019):9.40735,(483:16.506537,((484:15.039287,(485:15.038551,486:15.038551):0.000736):1.122902,(487:1.089166,(488:1.088901,(489:1.088687,490:1.088687):0.000214):0.000265):15.073023):0.344348):0.643844):8.207373):8.922666):10.405318):2.663342):4.498195):6.251556):12.921779):17.227168):1.503291):9.199497):3.927754):1.999992,((491:60.188168,((492:20.22253913,493:20.22253913):3.381643866,(494:12.73916363,(495:0.925742,496:0.925742):11.81342163):10.86501937):36.583985):28.883702,((497:70.937967,(498:24.376285,(499:19.478225,(500:0.001585,501:0.001585):19.47664):4.89806):46.561682):14.864199,((502:45.590072,(503:4.048423,504:4.048423):41.541649):28.043773,((((505:6.135529501,506:6.135529501):10.4584145,(507:2.114204,(508:2.063689685,(509:1.207934,510:1.207934):0.8557556851):0.05051431486):14.47974):8.238198,(511:19.081055,(((512:5.633646691,513:5.633646691):7.675529671,(514:2.17773134,(515:0.95783,516:0.95783):1.21990134):11.13144502):2.214838638,(((517:0.915922,518:0.915922):2.686187,(519:0.009526839168,520:0.009526839168):3.592582161):11.061772,(521:13.287515,((522:11.033547,(523:5.713777849,(524:2.684938201,525:2.684938201):3.028839647):5.319769151):1.507717,((526:0.085079,527:0.085079):10.565596,(528:7.748368184,(529:1.562712402,530:1.562712402):6.185655782):2.902306816):1.890589):0.746251):1.376365):0.860134):3.557041):5.751086):0.005297,((((531:0.4022178634,532:0.4022178634):4.624109137,(533:0.418488,((534:0.002253,535:0.002253):0.29673,(536:0.2781839529,537:0.2781839529):0.02079904711):0.119506):4.607838):13.131684,(538:17.695349,(((539:1.092642639,540:1.092642639):3.256733361,(541:4.347852,(542:0.031975,(543:0.002178,544:0.002178):0.029797):4.315877):0.001524):9.538612,((545:4.682501,546:4.682501):7.110373,(((547:1.358084551,548:1.358084551):6.080447449,(549:7.437806,(550:0.230633,551:0.230633):7.207173):0.000726):1.508685,(552:6.215923105,((553:0.002254,554:0.002254):1.526247,(555:0.9357955298,556:0.9357955298):0.5927054702):4.687422105):2.731293895):2.845657):2.095113):3.807361):0.462661):4.831452,(((557:0.115683,558:0.115683):6.212592,(559:4.490922046,560:4.490922046):1.837352954):15.804412,((((561:2.176157387,562:2.176157387):3.544333613,(563:1.826161,(564:1.534650585,565:1.534650585):0.2915104154):3.89433):15.06765,((566:0.3119719665,567:0.3119719665):4.685713034,((568:1.158884774,569:1.158884774):2.746068226,(570:0.003001,(571:0.002734,(572:0.001138569888,573:0.001138569888):0.001595430112):0.000267):3.901952):1.092732):15.790456):0.001059,(574:4.596811,((575:4.292465,(576:2.69349,((577:0.5428722009,578:0.5428722009):1.621778799,(579:0.906066,(580:0.40842,581:0.40842):0.497646):1.258585):0.528839):1.598975):0.000275,(582:3.952397,((583:1.964974,((584:0.000864,585:0.000864):1.963412,(586:1.963149,587:1.963149):0.001127):0.000698):1.986431,(588:2.169047,(589:0.301858,(590:0.301836,((591:0.09162122694,592:0.09162122694):0.2101947731,(593:0.301794,(594:0.301773,(595:0.245028,(596:0.245007,(597:0.181194,598:0.181194):0.063813):2.1e-05):0.056745):2.2e-05):2.1e-05):2.1e-05):2.2e-05):1.867189):1.782358):0.000992):0.340343):0.304071):16.192388):1.343488):0.856775):1.847976):48.796407):12.168321):3.269704):15.806444):3.385225):1.347969):11.278262):1.947681):8.858814):4.061802):137.222712);
+END;
