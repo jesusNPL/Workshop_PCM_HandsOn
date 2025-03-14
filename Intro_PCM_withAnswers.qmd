@@ -33,7 +33,9 @@ You will need two datasets, that will be provided for you:
 
 1.  A data.frame with species traits -- **CDR_traits_DIAZ_imputed.csv**
 
-2.  A phylogenetic tree -- **CDR_timeTree.tacted.nexus.tre**
+2.  A phylogenetic tree -- **CDR_timeTree_tacted.nex** 
+
+3. A community dataset -- **CDR_biocon_sample.csv**
 
 # Set up your data and your working directory
 
@@ -42,7 +44,8 @@ For this hands-on, you will need to have a set of R packages to do this lab. Ins
 ```{r}
 #| eval: false
 # Package vector names 
-packages <- c("tidyverse", "knitr", "ape", "geiger", "caper", "phytools") 
+packages <- c("tidyverse", "knitr", "ape", "geiger", 
+              "caper", "phytools", "picante") 
 
 ```
 
@@ -78,6 +81,7 @@ library(ape)
 library(geiger)
 library(phytools)
 library(caper)
+library(picante)
 ```
 
 Set up a working directory. Tell R that this is the directory you will be using, and read in your data:
@@ -103,6 +107,7 @@ You can use the function **dir.create()** to get create a series of folders with
 Load the data. Instead of reading files from the computer we will pull the required data directly from the internet.
 
 ```{r}
+#| eval: true
 
 ## Trait data
 traitData <- read_csv("https://raw.githubusercontent.com/jesusNPL/Workshop_PCM_HandsOn/refs/heads/main/Data/CDR_traits_DIAZ_imputed.csv") %>% 
@@ -110,9 +115,9 @@ traitData <- read_csv("https://raw.githubusercontent.com/jesusNPL/Workshop_PCM_H
   column_to_rownames("tipLabel")  # we are using the column "tipLabel" as rownames
 
 ## Phylogenetic data
-phyData <- read.nexus("https://raw.githubusercontent.com/jesusNPL/Workshop_PCM_HandsOn/refs/heads/main/Data/CDR_timeTree_tacted.nex")
+phyData <- force.ultrametric(read.nexus("https://raw.githubusercontent.com/jesusNPL/Workshop_PCM_HandsOn/refs/heads/main/Data/CDR_timeTree_tacted.nex"))
 
-phyData <- force.ultrametric(phyData)
+is.ultrametric(phy = phyData)
 
 ```
 
@@ -771,3 +776,439 @@ log(2) / OUModel$opt$alpha
 
 ```
 
+
+# Measuring phylogenetic diversity within communities 
+
+:::{.callout-note}
+The main goal of this section is to present basic understanding about measuring phylogenetic diversity within communities or best known as the analysis of community phylogenetics. The community phylogenetics integrates ecological and evolutionary concepts and explores the mechanisms (e.g., biotic interactions or environmental filters) governing the assembly of ecological communities. 
+
+There are different sources of information and web pages with a lot of information about this field. The most common and useful are the web pages of the books: [Modern Phylogenetic Comparative Methods and Their Application in Evolutionary Biology](http://www.mpcm-evolution.org/) and [Phylogenies in Ecology](https://www.utsc.utoronto.ca/~mcadotte/page-3/). Among the most influential papers in this field are [Phylogenies and Community Ecology](https://www.annualreviews.org/doi/abs/10.1146/annurev.ecolsys.33.010802.150448) by @webb_phylogenies_2002 and [The merging of community ecology and phylogenetic biology](https://onlinelibrary.wiley.com/doi/10.1111/j.1461-0248.2009.01314.x) by @cavender-bares_merging_2009.
+:::
+
+Load the phylogenetic tree and community data. 
+```{r}
+#| eval: false
+
+## Phylogenetic data
+phyData <- force.ultrametric(read.nexus("https://raw.githubusercontent.com/jesusNPL/Workshop_PCM_HandsOn/refs/heads/main/Data/CDR_timeTree_tacted.nex"))
+
+cdmData <- read_csv("~/Dropbox/Collaborations/CDR/1_Manuscripts/BioChange/data/Reich_2024/BioCON_sploss_NxCO2_1998_2021_cover_biomass_newNames.csv") %>% 
+  filter(LTERYear %in% c(1998, 2008, 2018)) %>% 
+  filter(sprich == 16) %>% 
+  replace(is.na(.), 0)
+
+cdmData %>% 
+  select(matches(x)) %>% 
+  select(!cntrt )
+
+write_csv(cdmData, file = "Data/CDR_timeTree_tacted.nex")
+
+```
+
+
+Awesome, we are now ready to explore the **jungle** of metrics for the evaluation of taxonomic, phenotypic and phylogenetic structure of communities [@pausas_jungle_2010]. Let's start with metrics for the taxonomic dimension.
+
+## Explore diversity metrics
+
+Let's calculate some metrics manually and then using the package {**picante**} we will calculate the same metrics but for all communities at once.
+
+### Phylogenetic diversity
+
+Phylogenetic diversity is just the sum of the total branch lengths in the community. In this case we are calculating PD using all species in the phylogeny, in other words, assuming that a single community contain the same number of species as the phylogeny.
+
+```{r}
+#| eval: false
+
+sum(matched$phy$edge.length) #  sum of the total branch lengths in the community
+
+```
+
+We can calculate PD for individual plots or communities, for example the plot **HARV_001**
+
+```{r}
+#| eval: false
+
+# Select species that are only present in the plot HARV_001
+HARV_001 <- matched$comm %>% 
+  filter(rownames(.) == "HARV_001") %>% 
+  t() %>% 
+  data.frame() %>% 
+  filter(HARV_001 > 0)
+
+# Drop species in the phylogeny that are not present in the plot HARV_001
+HARV_001_phy <- drop.tip(matched$phy, 
+                         setdiff(matched$phy$tip.label, 
+                                 rownames(HARV_001)))
+
+sum(HARV_001_phy$edge.length)
+
+```
+
+We can confirm the result by calculating PD using the package {**picante**}. However, instead of calculating plot by plot {picante} will calculate PD for all of the plots.
+
+```{r}
+#| eval: false
+
+HARV_PD <- pd(samp = matched$comm, 
+              tree = matched$phy, 
+              include.root = FALSE) # Faith's PD
+
+head(HARV_PD)
+
+```
+
+We NOW can confirm the PD value estimated by hand is equal to the PD estimated using {picante}.
+
+:::{.callout-tip}
+## Argument include.root = TRUE
+
+Using the argument "include.root = TRUE" in the function pd() of {picante} will return a slightly different PD value as the root of the phylogeny is considered in the calculation.
+
+:::
+
+You can see both metrics SR and PD are highly correlated, that is because PD is highly sensitive to the sample size, i.e., as more species are added to the community more branch lengths are added to the phylogeny and consequently the expected relationship is high.
+
+```{r}
+#| eval: false
+
+HARV_PD %>% 
+  ggplot(aes(x = SR, y = PD)) + 
+  geom_point(size = 3, color = "darkgray") 
+
+```
+
+Now see correlation between the two metrics
+
+```{r}
+#| eval: false
+
+HARV_PD %$% 
+  cor.test(SR, PD, use = "complete.obs")
+
+```
+Let's plot the association again...
+
+```{r}
+#| eval: false
+
+# Aux function for visualization
+theme_biosci <- function() {
+  theme_bw() + #base_family = "Noto Sans") +
+    theme(panel.grid.minor = element_blank(),
+          plot.background = element_rect(fill = "white", color = NA),
+          strip.background = element_rect(fill = "grey80", color = NA),
+          legend.title = element_text(face = "bold", size = 15), 
+          legend.text = element_text(size = 12))
+}
+
+# plot
+HARV_PD %>% 
+  ggplot(aes(x = SR, y = PD)) + 
+  geom_point(size = 3, color = "darkgray") + 
+  labs(x = "Species richness", y = "PD (millions of years)") + 
+  theme_biosci()
+
+```
+
+### Mean pairwise distance (MPD) and mean nearest-pairwise distance (MNTD)
+
+Other common metrics are MPD (mean pairwise distance) and MNTD (mean nearest taxon distance). As in PD, let's calculate MPD and MNTD manually.
+
+```{r}
+#| eval: false
+
+# MPD
+dist.trMB <- cophenetic(HARV_001_phy)
+
+dist.trMB <- dist.trMB[lower.tri(dist.trMB, diag = FALSE)]
+
+mean(dist.trMB)
+
+```
+
+```{r}
+#| eval: false
+
+# MNTD
+dist.trMB2 <- cophenetic(HARV_001_phy)
+diag(dist.trMB2) <- NA
+apply(dist.trMB2, 2, min, na.rm = TRUE)
+
+mean(apply(dist.trMB2, 2, min, na.rm = TRUE))
+
+```
+
+And now using the package **{picante}**
+
+```{r}
+#| eval: false
+
+# MPD
+HARV_MPD <- mpd(matched$comm, 
+                cophenetic(matched$phy)) 
+
+head(HARV_MPD)
+
+```
+
+```{r}
+#| eval: false
+
+# MNTD
+HARV_MNTD <- mntd(matched$comm, 
+                  cophenetic(matched$phy)) 
+
+head(HARV_MNTD)
+
+```
+
+Until here we just played with the data and also confirmed that we can calculate different metrics by hand. Now let's do a more formal evaluation of the biodiversity in Harvard Forest & Quabbin Watershed NEON, MA.
+
+# Community phylogenetic diversity metrics
+
+The analyses of community phylogenetic started making inferences about the mechanisms structuring the local communities through the evaluation of phylogenetic arrangements in local communities (see @cavender-bares_merging_2009 for an initial criticism). However, new methods are now available, such that more complex balance between ecological and historical processes at local and regional scales can be incorporated into the analyses [@pigot_new_2015; @pinto-ledezma_drivers_2019; @pintoledezma_testing_2020].
+
+Let's calculate some of the most common metrics.
+
+Note - we will use the object __HARV_CDM__ to store all the results.
+
+### Phylogenetic diversity in a community - PD
+
+PD or phylogenetic diversity is the sum of the total phylogenetic branch length for one or multiple samples.
+
+```{r}
+#| eval: false
+
+HARV_CDM <- ses.pd(samp = matched$comm, 
+                   tree = matched$phy, 
+                   runs = 999) # this will take some time
+
+HARV_CDM <- HARV_CDM %>% 
+  select(ntaxa, pd.obs, pd.obs.z)
+
+#HARV_CDM <- HARV_CDM[, c(1, 2, 6, 7)]
+
+head(HARV_CDM)
+
+```
+
+### Phylogenetic Rao's quadratic entropy - RaoD
+
+Rao's quadratic entropy (Rao 1982) is a measure of diversity in ecological communities that can optionally take species differences (e.g. phylogenetic dissimilarity) into account.
+
+```{r}
+#| eval: false
+
+HARV_CDM <- HARV_CDM %>% 
+  mutate(RaoD = raoD(matched$comm, 
+                     force.ultrametric(matched$phy))$Dkk)
+
+head(HARV_CDM)
+
+```
+
+### Mean pairwise distance separating taxa in a community - MPD 
+
+```{r}
+#| eval: false
+
+# SES-MPD
+HARVsesmpd <- ses.mpd(samp = matched$comm, 
+                      dis = cophenetic(matched$phy), 
+                      null.model = "taxa.labels", 
+                      abundance.weighted = TRUE, 
+                      runs = 999)
+
+HARVsesmpd <- HARVsesmpd %>% 
+  select(mpd.obs, mpd.obs.z)
+
+HARV_CDM <- bind_cols(HARV_CDM, HARVsesmpd)
+
+```
+
+### Mean nearest taxon distance for taxa in a community - MNTD
+ 
+```{r}
+#| eval: false
+
+# SES-MNTD
+HARVsesmntd <- ses.mntd(samp = matched$comm, 
+                        dis = cophenetic(matched$phy), 
+                        null.model = "taxa.labels", 
+                        abundance.weighted = TRUE,
+                        runs = 999)
+
+HARVsesmntd <- HARVsesmntd %>% 
+  select(mntd.obs, mntd.obs.z)
+
+HARV_CDM <- bind_cols(HARV_CDM, HARVsesmntd)
+
+```
+
+### Phylogenetic species variability - PSV
+
+Phylogenetic species variability quantifies how phylogenetic relatedness decreases the variance of a hypothetical unselected/neutral trait shared by all species in a community. 
+
+```{r}
+#| eval: false
+
+# PSV or phylogenetic species variability
+HARV_CDM <- HARV_CDM %>% 
+  mutate(PSV = psv(samp = matched$comm, 
+               tree = matched$phy, 
+               compute.var = TRUE)$PSVs)
+
+HARV_CDM
+
+```
+
+### Phylogenetic species richness - PSR
+
+Phylogenetic species richness is the number of species in a sample multiplied by PSV.
+
+```{r}
+#| eval: false
+
+# PSR or phylogenetic species richness
+HARV_CDM <- HARV_CDM %>% 
+  mutate(PSR = psr(samp = matched$comm, 
+               tree = matched$phy, 
+               compute.var = TRUE)$PSR)
+
+HARV_CDM
+
+```
+
+### Phylogenetic species evenness - PSE
+
+Phylogenetic species evenness is the metric PSV modified to incorporate relative species abundances.
+
+```{r}
+#| eval: false
+
+# PSE or phylogenetic species evenness
+HARV_CDM <- HARV_CDM %>% 
+  mutate(PSE = pse(samp = matched$comm, 
+               tree = matched$phy)$PSEs)
+
+HARV_CDM
+
+```
+
+### qDp
+
+**qD(p)** is a metric that measure the variation in species’ divergences within communities. This metric is a modification of the Hill index, weighting a species’ proportional abundance by its relative share of phylogenetic information.
+
+```{r}
+#| eval: false
+
+# Scheiner 2012 qD(p)
+source("https://raw.githubusercontent.com/jesusNPL/BiodiversityScience/master/Spring2021/R-Functions/qDp.R")
+
+HARV_CDM <- HARV_CDM %>% 
+  mutate(qDP = qDp(matched$phy, 
+                   matched$comm, q = 2))
+
+HARV_CDM
+
+```
+
+We have calculated several metrics that describe the phylogenetic structure of communities at Harvard Forest & Quabbin Watershed NEON (HARV) site.
+
+# Compare the metrics
+
+```{r}
+#| eval: false
+
+scatterplotMatrix(HARV_CDM)
+
+```
+Hmmm, Kinda ugly...
+
+Let's use the package {corrplot} to get a more informative figure.
+
+```{r}
+#| eval: false
+
+cor_mat <- cor(HARV_CDM, method = 'spearman')
+
+corrplot.mixed(cor_mat, 
+               tl.pos = "lt", 
+               tl.cex = 0.7, 
+               number.cex = 0.7, 
+               addCoefasPercent = TRUE, 
+               mar = c(0, 0, 1, 0))
+
+```
+
+Explore the correlation among metrics.
+
+```{r}
+#| eval: false
+
+HARV_CDM %>% 
+  cor.table()
+
+```
+
+You can also plot the relationship between metrics.
+
+```{r}
+#| eval: false
+
+HARV_CDM %>% 
+  ggplot(aes(x = RaoD, y = PSE)) + 
+  geom_point(size = 3, color = "darkgray") + 
+  labs(x = "RaoD", y = "PSE") + 
+  theme_biosci()
+
+```
+
+*RaoD and PSE are highly correlated; explain why*
+
+```{r}
+#| eval: false
+
+HARV_mds <- HARV_CDM %>% 
+  select(-c(pd.obs.z, mpd.obs.z, mntd.obs.z)) %>% # MNDS does not like negative values
+  na.omit() %>% 
+  metaMDS(.)
+
+
+ordiplot(HARV_mds, type = "t", display = "species")
+
+```
+
+Let's use {ggplot2} to make a better figure.
+
+```{r}
+#| eval: false
+
+## Metrics scores
+HARV_mds_scores <- data.frame(HARV_mds$species) %>% 
+  mutate(Metric = rownames(.))
+
+HARV_mds_scores %>% 
+  ggplot(aes(x = MDS1, y = MDS2, color = Metric)) + 
+  geom_point(size = 3, alpha = 0.5) + 
+  theme_biosci()
+
+```
+
+*What do you think?* 
+
+*Which metric would you use for your paper?*
+
+# The challenge
+
+The challenge for this assignment is:
+
+* **Option 1** 
+
+Repeat all process but select two NEON sites across the United States, compare the results of both sites and discuss the difference in the results if there any. For example, you can use the other two sites we have downloaded at the beginning of the lab, i.e., "CPER" and "ABBY".
+
+* **Option 2** 
+
+Another option is to calculate the phylogenetic diversity metrics for each year on a NEON site. For example, you can use the data from HARV but instead of doing the analysis only for the 2018 (as we did here) you can repeat the process for all years from 2013 to 2022 and discuss if the taxonomic (species richness) and phylogenetic diversities changed.
+
+The end! for now...
